@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frame">
+
+        <View
+            android:id="@+id/rec1"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:background="#7890d4"
+            android:tag="#7890d4" />
+
+        <View
+            android:id="@+id/rec2"
+            android:layout_width="150dp"
+            android:layout_height="340dp"
+            android:layout_below="@+id/rec1"
+            android:layout_marginTop="10dp"
+            android:background="#b753c0"
+            android:tag="#b753c0"/>
+
+        <View
+            android:id="@+id/rec3"
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rec1"
+            android:background="#8f082b"
+            android:tag="#8f082b" />
+
+        <View
+            android:id="@+id/rec4"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_below="@id/rec3"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rec1"
+            android:background="#808080"
+            android:tag="#808080" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:layout_below="@id/rec4"
+            android:layout_toRightOf="@id/rec2"
+            android:id="@+id/rec5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:background="#000080"
+            android:tag="#000080"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black" />
+</RelativeLayout>
